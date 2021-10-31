@@ -26,7 +26,7 @@ USERNAME = "admin"
 PASSWORD = "admin"
 SECRET_KEY = "change_me"
 SQLALCHEMY_DATABASE_URI = os.getenv(
-    "HEROKU_POSTGRESQL_IVORY_URL", f"sqlite:///{Path(basedir).joinpath(DATABASE)}"
+    "DATABASE_URL", f"sqlite:///{Path(basedir).joinpath(DATABASE)}"
 )
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
